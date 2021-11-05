@@ -37,10 +37,10 @@ def wind_chill_index_calculation(wind_speed, wind_temperature):
     :param wind_temperature: wind_temperature
     :return: wind_chill_index_result
     """
-    wind_chill_index_formula = 13.12 + 0.6215 * \
-                               wind_temperature - 11.37 * \
-                               math.pow(wind_speed, 0.16) + 0.3965 * \
-                               wind_temperature * math.pow(wind_speed, 0.16)
+    wind_chill_index_formula = \
+        13.12 + 0.6215 * wind_temperature - 11.37 * \
+        math.pow(wind_speed, 0.16) + 0.3965 * wind_temperature * \
+        math.pow(wind_speed, 0.16)
     return wind_chill_index_formula
 
 
